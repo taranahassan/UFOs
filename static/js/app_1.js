@@ -5,22 +5,23 @@ const tableData = data;
 var tbody = d3.select('tbody');
 
 function buildTable(data) {
-    // clearing existing data
-    tbody.html('');
+    // First, clear out any existing data
+    tbody.html("");
+  
+    // Next, loop through each object in the data
+    // and append a row and cells for each value in the row
+    data.forEach((dataRow) => {
+        // Append a row to the table body
+        let row = tbody.append("tr");
+        // Loop through each field in the dataRow and add
+        // each value as a table cell (td)
+        Object.values(dataRow).forEach((val) => {
+            let cell = row.append("td");
+            cell.text(val);
+            }
+        );
+    });
 }
-
-// looping through each object in data
-// and appending row and cells for each value in row
-data.forEach((dataRow) => {
-    // appending a row to table body
-    let row = tbody.append('tr');
-    // looping through each field in dataRow and adding
-    Object.values(dataRow).forEach((val) => {
-        let cell = row.append('td');
-        cell.text(val);
-    }
-    );
-});
 
 function handleClick() {
     // grabbing datetime value from the filter
@@ -32,11 +33,11 @@ function handleClick() {
         // 'datetime' value matches filter value
         filteredData = filteredData.filter(row => row.datetime === date);
     };
-// rebuilding table using filtered data
-// @NOTE: if no date was entered, then filteredData will
-// just be the original tableData
-buildTable(filteredData);
-};
+    // rebuilding table using filtered data
+    // @NOTE: if no date was entered, then filteredData will
+    // just be the original tableData
+    buildTable(filteredData);
+}
 
 // creating filter-btn id to link to button tag in html
 //(attaching event to listen for form button)
