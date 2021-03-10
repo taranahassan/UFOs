@@ -6,7 +6,6 @@ This project analysis entailed creating a dynamic webpage with **UFO Sightings**
 
 #### Sources:
 [data.js](https://github.com/taranahassan/UFOs/blob/main/static/js/data.js) <br>
-
 <br>
 <br>
 ### Results: <br>
