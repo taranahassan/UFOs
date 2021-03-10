@@ -6,16 +6,18 @@ This project analysis entailed creating a dynamic webpage with **UFO Sightings**
 
 #### Sources:
 [data.js](https://github.com/taranahassan/UFOs/blob/main/static/js/data.js) <br>
-<br>
+
 <br>
 <br>
 ### Results: <br>
 
 Using the Bootstrap framework a table has been created to display the UFO sightings data.  Each line of entry show details of the sighting's location, shape and comments.  Filters have been created for user input and in return the table populates the relevant entry based on the user's search criteria.  <br>
+<br>
 ![table](https://user-images.githubusercontent.com/75437852/110571238-45d08a80-8125-11eb-92ae-daa67160ded9.PNG)
 
 
 **The filters are based on date, city, state, country and shape.** <br>
+<br>
 ![filters](https://user-images.githubusercontent.com/75437852/110564925-a0fd7f80-811b-11eb-8c1d-a9be579fcc96.PNG)
 
 
@@ -30,12 +32,13 @@ One or more filters can be used to populate results in the table.<br>
 
 ***First example:*** <br>
 Only 1 search criteria entered for January 1, 2010.  All entries of any sightings that occurred on that day populates in the table. <br>
+<br>
 ![search1](https://user-images.githubusercontent.com/75437852/110564885-9216cd00-811b-11eb-9cc1-0bbbd50b34a7.PNG)
 
 ***Second example:*** <br>
 In this example both the date and shape criteria have been entered.  All entries were further refined from the first example and populated in the table. <br>
-![search2](https://user-images.githubusercontent.com/75437852/110565136-fcc80880-811b-11eb-8d80-5fc5299ff2f9.PNG)
 <br>
+![search2](https://user-images.githubusercontent.com/75437852/110565136-fcc80880-811b-11eb-8d80-5fc5299ff2f9.PNG)
 <br>
 <br>
 ### Summary: <br>
