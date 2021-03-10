@@ -9,7 +9,7 @@ This project analysis entailed creating a dynamic webpage with **UFO Sightings**
 
 <br>
 <br>
-### Results: <br>
+ Results: <br>
 
 Using the Bootstrap framework a table has been created to display the UFO sightings data.  Each line of entry show details of the sighting's location, shape and comments.  Filters have been created for user input and in return the table populates the relevant entry based on the user's search criteria.  <br>
 <br>
